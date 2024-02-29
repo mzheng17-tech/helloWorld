@@ -1,11 +1,11 @@
-p {
+p{
     color: darkblue;
-    font-family: Garamond
+    font-family: Garamond;
 }
 /*style all level 2 headers with underline and font */
 h2 {
     text-decoration: underline;
-    font-family: Broadway
+    font-family: Broadway;
 }
 /*style all tables to include a border with border color */
 table, td, th {
@@ -19,11 +19,11 @@ p#special {
     font-family: "Britannic Bold";
 }
 
-div.first p {
-    font-weight: bold
+.text {
+    font-weight: bold;
 }
 
-.logo {
+img.logo {
     width: 267px;
     height: 72px;
 }
