@@ -1,0 +1,49 @@
+p {
+    color: darkblue;
+    font-family: Garamond
+}
+/*style all level 2 headers with underline and font */
+h2 {
+    text-decoration: underline;
+    font-family: Broadway
+}
+/*style all tables to include a border with border color */
+table, td, th {
+    border-style: solid;
+    border-color: dimgrey;
+}
+
+/*style for special paragraph in about page paragraph with color and font*/
+p#special {
+    color: cornflowerblue;
+    font-family: "Britannic Bold";
+}
+
+div.first p {
+    font-weight: bold
+}
+
+.logo {
+    width: 267px;
+    height: 72px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
