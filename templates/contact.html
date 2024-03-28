@@ -4,7 +4,48 @@
     <meta charset="UTF-8">
     <title>Contact</title>
 </head>
+
 <body>
 
+<div class="container">
+
+<h1>User Contact</h1>
+
+{% if submitted %}
+    <div class="col-12">
+        <h2>Thank you for completing the form.</h2>
+    </div>
+
+    <div class="col-6">
+        <p>First Name:</p>
+    </div>
+    <div class="col-6">
+        <p>{{ request.form.get('first_name') }}</p>
+    </div>
+
+    <div class="col-6">
+        <p>Last Name:</p>
+    </div>
+    <div class="col-6">
+        <p>{{ request.form.get('last_name') }}</p>
+    </div>
+
+    <div class="col-6">
+        <p>Email Address:</p>
+    </div>
+    <div class="col-6">
+        <p>{{ request.form.get('email_address') }}</p>
+    </div>
+
+    <div class="col-6">
+        <p>Age:</p>
+    </div>
+    <div class="col-6">
+        <p>{{ request.form.get('age') }}</p>
+    </div>
+
+{% endif %}
+
+</div>
 </body>
 </html>
