@@ -1,7 +1,8 @@
+<div class="container">
+
 <h1>User Contact</h1>
 
 {% if submitted %}
-    <div class="container">
     <div class="col-12">
         <h2>Thank you for completing the form.</h2>
     </div>
@@ -35,7 +36,37 @@
     </div>
 
     <div class="col-md-6">
-        <p><a href="/contact">Complete form again</a></p>
+        <p><a href="{{ url_for('contact') }}">Complete form again</a></p>
+    </div>
+
+{% else %}
+
+<form class="row g-3" action="{{ url_for('contact') }}" method="post">
+    <div class="col-md-6">
+        <label for="first_name" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="first_name" name="first_name" required>
+    </div>
+    <div class="col-md-6">
+        <label for="last_name" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="last_name" name="last_name" required>
+    </div>
+<div class="col-12">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+</div>
+<div class="col-12">
+    <label for="age" class="form-label">Age</label>
+    <input type="number" class="form-control" id="age" name="age" required>
+</div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 
 
+
+
+</form>
+{% endif %}
+
+</div>
