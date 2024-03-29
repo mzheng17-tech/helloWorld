@@ -2,10 +2,12 @@
 {%  block page_title %}User Contact{% endblock %}
 {% block page_content %}
 
+    <!--display form for user to fill out-->
 <div class="container">
 
 <h1>User Contact</h1>
 
+    <!--display thank you message and user-entered data when form has been filled out-->
 {% if form_submitted %}
     <div class="col-12">
         <h2>Thank you for completing the form.</h2>
@@ -43,6 +45,7 @@
         <p><a href="{{ url_for('contact') }}">Complete form again</a></p>
     </div>
 
+    <!-- display the form when not yet filled -->
 {% else %}
 
     <form class="row g-3" action="{{ url_for('contact') }}" method="post">
