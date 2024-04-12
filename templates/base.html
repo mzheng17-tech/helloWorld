@@ -28,6 +28,11 @@
                         <li class="nav-item">
                           <a id="student_create" class="nav-link {% if request.endpoint=='student_create' %}active{%endif %}" href="{{ url_for('student_create') }}">Add New Student</a>
                         </li>
+
+                            <!--training link for admin-->
+                            <li class="nab-item">
+                                <a id="training" class="nav-link" href="/training">Training</a>
+                            </li>
                         {% endif %}
                     </ul>
                 </div>
