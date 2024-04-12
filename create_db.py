@@ -21,8 +21,8 @@ with app.app_context():
             'password': generate_password_hash('studentpw', method='pbkdf2:sha256'), 'role':'STUDENT'},
         {'username': 'manager', 'email': 'manager@umd.edu', 'first_name':'Joe', 'last_name':'King',
             'password': generate_password_hash('managerpw', method='pbkdf2:sha256'), 'role':'MANAGER'},
-        {'username': 'mzheng17', 'email': 'mzheng17@terpmail.umd.edu', 'first_name':'Maggie', 'last_name':'Zheng',
-            'password': generate_password_hash('mzheng17', method='pbkdf2:sha256'), 'role':'STUDENT'}
+        {'username': 'admin', 'email': 'admin@umd.edu', 'first_name':'Crystal', 'last_name':'Ball',
+            'password': generate_password_hash('adminpw', method='pbkdf2:sha256'), 'role':'ADMIN'}
     ]
 
     for each_user in users:
@@ -31,6 +31,5 @@ with app.app_context():
                       last_name=each_user["last_name"], password=each_user["password"], role=each_user["role"])
         db.session.add(a_user)
         db.session.commit()
-
 
 
