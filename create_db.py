@@ -22,7 +22,9 @@ with app.app_context():
         {'username': 'manager', 'email': 'manager@umd.edu', 'first_name':'Joe', 'last_name':'King',
             'password': generate_password_hash('managerpw', method='pbkdf2:sha256'), 'role':'MANAGER'},
         {'username': 'admin', 'email': 'admin@umd.edu', 'first_name':'Crystal', 'last_name':'Ball',
-            'password': generate_password_hash('adminpw', method='pbkdf2:sha256'), 'role':'ADMIN'}
+            'password': generate_password_hash('adminpw', method='pbkdf2:sha256'), 'role':'ADMIN'},
+        {'username': 'mzheng17', 'email': 'Mzheng17@terpmail.umd.edu', 'first_name': 'Maggie', 'last_name': 'Zheng',
+         'password': generate_password_hash('mzheng17', method='pbkdf2:sha256'), 'role': 'STUDENT'}
     ]
 
     for each_user in users:
